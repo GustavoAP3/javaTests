@@ -8,7 +8,7 @@ public class bankAccount {
     public bankAccount(int numeroConta, String nomeTitular, double valorDeposito){
         this.numeroConta = numeroConta;
         this.nomeTitular = nomeTitular;
-        this.valorEmConta = valorDeposito;
+        Depositar(valorDeposito);
     }
     public bankAccount(int numeroConta, String nomeTitular){
         this.numeroConta = numeroConta;
@@ -32,7 +32,7 @@ public class bankAccount {
         valorEmConta += valor;
     }
     public void Sacar(double valor){
-        valorEmConta = (valorEmConta - valor) - 5;
+        valorEmConta -= valor + 5;
     }
 
     public String toString() {
